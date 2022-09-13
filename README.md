@@ -39,7 +39,7 @@ Translate the JavaScript code found in the exercises below into C# code.
 
 ```sh
 cd csharp
-dotnet new console -o <New Project Name>
+dotnet new console -o <New Project Name> --framework net5.0
 ```
 
 ## Resources
