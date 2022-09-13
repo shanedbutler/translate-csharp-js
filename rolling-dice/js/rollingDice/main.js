@@ -5,27 +5,27 @@ const roll = () => {
     switch (dieValue) {
         case 1:
             die.unicode = "\u2680";
-            die.value = 1;
+            die.value = dieValue;
             break;
         case 2:
             die.unicode = "\u2681";
-            die.value = 2;
+            die.value = dieValue;
             break;
         case 3:
             die.unicode = "\u2682";
-            die.value = 3;
+            die.value = dieValue;
             break;
         case 4:
             die.unicode = "\u2683";
-            die.value = 4;
+            die.value = dieValue;
             break;
         case 5:
             die.unicode = "\u2684";
-            die.value = 5;
+            die.value = dieValue;
             break;
         case 6:
             die.unicode = "\u2685";
-            die.value = 6;
+            die.value = dieValue;
             break;
     }
     return die
