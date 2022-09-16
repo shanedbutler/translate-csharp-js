@@ -14,7 +14,7 @@ namespace WordFrequency
         public static void countFreq()
         {
             string text = Regex.Replace(getText(), "[^A-Za-z ]", "");
-            var words = text.Split(" ");
+            string[] words = text.Split(" ");
             Dictionary<string, int> freqCounts = new Dictionary<string, int>();
 
             foreach (string word in words)
@@ -34,7 +34,7 @@ namespace WordFrequency
                 }
             }
 
-            foreach (var wordWithCount in freqCounts)
+            foreach (KeyValuePair<string, int> wordWithCount in freqCounts)
             {
                 Console.Write($"{wordWithCount.Value} - ");
                 Console.WriteLine(wordWithCount.Key);
